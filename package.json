@@ -11,9 +11,10 @@
   "dependencies": {
     "@prisma/client": "^6.5.0",
     "d3": "^7.9.0",
+    "lucide-react": "^1.16.0",
     "mysql": "^2.18.1",
-    "next": "15.1.2",
-    "next-auth": "^4.24.11",
+    "next": "^15.5.18",
+    "next-auth": "^4.24.12",
     "papaparse": "^5.4.1",
     "prisma": "^6.5.0",
     "react": "^19.0.0",
@@ -21,7 +22,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.10",
     "tailwindcss": "^3.4.17"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "^8.5.14"
+    }
   }
 }
