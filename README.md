@@ -2,6 +2,9 @@
 
 A modern, interactive dashboard for exploring cryptocurrency market data. Switch between assets, inspect price and volume trends, review key metrics, and visualize correlation and risk–reward profiles—all from CSV files served locally.
 
+**Live demo:** [crypto-analysiss.vercel.app](https://crypto-analysiss.vercel.app)  
+**Repository:** [github.com/abeeraisabeera/Crypto_Analysiss](https://github.com/abeeraisabeera/Crypto_Analysiss)
+
 <p align="center">
   <img src="assets/demo1.png" alt="Dashboard preview" width="90%">
 </p>
@@ -121,6 +124,17 @@ CSV (public/data) → Papa Parse → normalizeRows → React state
 - **Colors** — Adjust CSS variables in `src/app/globals.css` (`--accent`, `--positive`, etc.).
 - **Time ranges** — Default chart range and pills are configured in `src/components/dashboard/MainChart.js`.
 
+## Deployment (Vercel)
+
+The app is configured for [Vercel](https://vercel.com/) with `pnpm` via `vercel.json`.
+
+```bash
+pnpm install
+npx vercel --prod
+```
+
+To enable automatic deploys on every push, connect the GitHub repo in the [Vercel project settings](https://vercel.com/abeeraisabeera-7226s-projects/crypto-analysiss/settings/git).
+
 ## License
 
-Private project. All rights reserved.
+[MIT](LICENSE) — Copyright (c) 2026 Abeera
